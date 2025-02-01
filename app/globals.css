@@ -2,17 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+h1 {
+  @apply text-white;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+h2,
+h3 {
+  @apply text-black-main;
+}
 
-body {
+h6 {
+  @apply text-blue-main;
+}
+
+p {
+  @apply text-black-secondary font-inter;
 }
