@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import MobileBannerImage from "@/components/MobileBannerImage";
 import Navbar from "@/components/Navbar";
 import PhilosophySection from "@/components/PhilosophySection";
+import TabSection from "@/components/TabSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <MobileBannerImage />
       <AboutUsSection />
       <PhilosophySection />
+      <TabSection />
     </>
   );
 }

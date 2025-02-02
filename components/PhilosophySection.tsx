@@ -21,7 +21,7 @@ const PhilosophySection = () => {
     },
   ];
   return (
-    <section className="container mt-20">
+    <section className="container my-10 md:my-14 lg:my-28">
       <h6 className="uppercase text-center">Our Philosophy</h6>
       <h2 className="mt-4 mb-6 leading-tight text-center">
         Human-centred innovation
