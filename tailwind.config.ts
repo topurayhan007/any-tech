@@ -30,11 +30,20 @@ const config: Config = {
         montserrat: ["var(--font-montserrat)", "Montserrat", "sans-serif"],
         inter: ["var(--font-inter)", "Inter", "sans-serif"],
       },
+      container: {
+        center: true,
+        screens: {
+          DEFAULT: "1200px",
+        },
+        padding: {
+          DEFAULT: "2rem",
+        },
+      },
       backgroundImage: {
         "hero-bg":
           "radial-gradient(59.82% 121.73% at -9.66% 130.31%,#00e9ea 0%,#1f80f0 52.08%,#005bc4 100%)",
         "hero-gradient-overlay":
-          "linear-gradient(190deg,#1f80f0 15.05%,rgba(31,128,240,0) 30.39%)",
+          "linear-gradient(200deg, #1f80f0 15.05%, rgba(31, 128, 240, 0) 30.39%)",
       },
       boxShadow: {
         "button-primary": "0px 3px 3px rgba(16, 62, 117, 0.37)",

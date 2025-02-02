@@ -61,7 +61,7 @@ const Navbar = () => {
       }`}
     >
       <div className="relative">
-        <nav className="container mx-auto flex items-center justify-between lg:px-auto px-7">
+        <nav className="container flex items-center justify-between lg:px-4 px-7">
           <div className="flex items-center justify-center">
             <Link href="/">
               {/* Desktop Logo */}

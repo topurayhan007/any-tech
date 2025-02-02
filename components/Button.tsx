@@ -6,10 +6,16 @@ import React from "react";
 interface ButtonProps {
   variant: "outline" | "primary" | "primary-2";
   href: string;
+  className?: string;
   children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({ variant, href, children }) => {
+const Button: React.FC<ButtonProps> = ({
+  variant,
+  href,
+  className,
+  children,
+}) => {
   return (
     <Link
       href={href}
@@ -21,7 +27,8 @@ const Button: React.FC<ButtonProps> = ({ variant, href, children }) => {
           "bg-orange-main shadow-button-primary": variant === "primary",
           "md:py-[13px] py-3 bg-orange-main drop-shadow-button-primary hover:bg-orange-500 hover:shadow-button-primary":
             variant === "primary-2",
-        }
+        },
+        className
       )}
     >
       <span
