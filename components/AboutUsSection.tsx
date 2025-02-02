@@ -7,7 +7,7 @@ const AboutUsSection = () => {
       <div className="container mt-10">
         <div className="flex flex-col md:flex-row">
           <div className="w-full">
-            <h6 className="">Powering the future of finance</h6>
+            <h6 className="uppercase">Powering the future of finance</h6>
             <h2 className="my-5 leading-tight">
               Uncovering new ways to delight customers
             </h2>
