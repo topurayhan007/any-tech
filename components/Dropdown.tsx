@@ -23,7 +23,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   icon,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef<HTMLLIElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!clickable) return;
@@ -42,7 +42,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   }, [clickable]);
 
   return (
-    <li
+    <div
       ref={dropdownRef}
       className={cn("relative", { group: !clickable })}
       onMouseEnter={() => !clickable && setIsOpen(true)}
@@ -89,7 +89,7 @@ const Dropdown: React.FC<DropdownProps> = ({
           </li>
         ))}
       </ul>
-    </li>
+    </div>
   );
 };
 

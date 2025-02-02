@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({ variant, href, children }) => {
     <Link
       href={href}
       className={cn(
-        "md:py-[14px] py-[13px] px-[42px] space-x-[8px] flex items-center transition-all duration-300 rounded-[3px] group",
+        "md:py-[14px] py-[13px] px-[42px] space-x-[8px] flex items-center justify-center transition-all duration-300 rounded-[3px] group",
         {
           "border border-white hover:bg-white hover:shadow-button-primary":
             variant === "outline",

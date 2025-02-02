@@ -6,6 +6,8 @@ const customColors = {
   "blue-tertiary": "#00152D",
   "blue-medium-light": "#B9D9FF",
   "blue-light": "#F8FCFF",
+  "blue-indigo": "#1F80F0",
+  "blue-indigo-light": "#1B76E9",
   "orange-main": "#FE8B53",
   "teal-main": "#00e9ea",
   "black-main": "#0b305b",
