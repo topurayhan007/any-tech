@@ -4,27 +4,27 @@ import React from "react";
 const AboutUsSection = () => {
   return (
     <section className="">
-      <section className="container mt-10">
-        <div className="flex">
+      <div className="container mt-10">
+        <div className="flex flex-col md:flex-row">
           <div className="w-full">
             <h6 className="">Powering the future of finance</h6>
             <h2 className="my-5 leading-tight">
               Uncovering new ways to delight customers
             </h2>
-            <p className="font-bold mb-5 leading-relaxed">
+            <p className="hidden md:block font-bold mb-5 leading-relaxed">
               AnyTech is revolutionising financial technology by introducing
               innovative and real-time transaction account processing
               capabilities, specifically designed for retail financial services.
             </p>
-            <p className="font-normal leading-relaxed">
+            <p className="hidden md:block font-normal leading-relaxed">
               Our modern approach surpasses traditional banking and card
               processing systems, empowering you with the most advanced
               technology for lasting success.
             </p>
           </div>
 
-          <div className="w-full relative">
-            <figure className="w-[75%] mx-auto [box-shadow:0px_23px_30px_0px_#16437763]">
+          <div className="w-full relative my-12 md:my-0">
+            <figure className="w-[75%] md:w-[80%] lg:w-[75%] mt-0 md:mt-8 lg:mt-0 mx-auto [box-shadow:0px_23px_30px_0px_#16437763]">
               <Image
                 src="/assets/backgrounds/section-2.png"
                 alt="Woman doing financing"
@@ -79,7 +79,7 @@ const AboutUsSection = () => {
               />
             </figure>
 
-            <figure className="absolute -bottom-[15%] right-[20%] w-1/2 h-1/2 z-10">
+            <figure className="absolute -bottom-[15%] md:-bottom-[0%] lg:-bottom-[10%] right-[30%] w-1/2 h-1/2 md:w-[40%] md:h-[40%] lg:w-1/2 lg:h-1/2 z-10">
               <Image
                 src="/assets/backgrounds/financingLine2.png"
                 alt="Line Graphics 2"
@@ -90,8 +90,21 @@ const AboutUsSection = () => {
               />
             </figure>
           </div>
+
+          <div className="block md:hidden">
+            <p className="font-bold mb-5 leading-relaxed">
+              AnyTech is revolutionising financial technology by introducing
+              innovative and real-time transaction account processing
+              capabilities, specifically designed for retail financial services.
+            </p>
+            <p className="font-normal leading-relaxed">
+              Our modern approach surpasses traditional banking and card
+              processing systems, empowering you with the most advanced
+              technology for lasting success.
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
       <div className="section-bottom-clip bg-gradient-to-b from-white to-blue-50 h-32"></div>
     </section>
   );

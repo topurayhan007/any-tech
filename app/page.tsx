@@ -7,8 +7,10 @@ import PhilosophySection from "@/components/PhilosophySection";
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
+      <div className="relative">
+        <Navbar />
+        <HeroSection />
+      </div>
       <MobileBannerImage />
       <AboutUsSection />
       <PhilosophySection />
