@@ -34,6 +34,13 @@ const config: Config = {
         "hero-gradient-overlay":
           "linear-gradient(190deg,#1f80f0 15.05%,rgba(31,128,240,0) 30.39%)",
       },
+      boxShadow: {
+        "button-primary": "0px 3px 3px rgba(16, 62, 117, 0.37)",
+      },
+      dropShadow: {
+        nav: "0px -5px 28px rgba(22, 67, 119, .37)",
+        "button-primary": "0px 3px 3px rgba(16, 62, 117, 0.37)",
+      },
     },
   },
   plugins: [],
