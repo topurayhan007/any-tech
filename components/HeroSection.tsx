@@ -42,7 +42,7 @@ const HeroSection = () => {
       <div className="hidden lg:block absolute top-0 left-0 h-full w-full z-0">
         <Image
           src="/assets/backgrounds/WaveLinesDesktop1.svg"
-          alt="Hero Image"
+          alt="Angled lines 1"
           width={0}
           height={0}
           sizes="100vw"
@@ -52,7 +52,7 @@ const HeroSection = () => {
       <div className="hidden lg:block absolute top-0 left-0 h-full w-full z-0">
         <Image
           src="/assets/backgrounds/WaveLinesDesktop3.svg"
-          alt="Hero Image"
+          alt="Angled lines 2"
           width={0}
           height={0}
           sizes="100vw"
@@ -62,7 +62,7 @@ const HeroSection = () => {
       <div className="hidden lg:block absolute top-0 left-0 h-full w-1/2 z-0">
         <Image
           src="/assets/backgrounds/WaveLinesDesktop4.svg"
-          alt="Hero Image"
+          alt="Angled lines 3"
           width={0}
           height={0}
           sizes="100vw"
@@ -73,7 +73,7 @@ const HeroSection = () => {
       <div className="block lg:hidden absolute top-0 left-0 h-1/2 w-full z-0">
         <Image
           src="/assets/backgrounds/WaveLinesMobile1.svg"
-          alt="Hero Image"
+          alt="Angled lines 4"
           width={0}
           height={0}
           sizes="100vw"
@@ -84,7 +84,7 @@ const HeroSection = () => {
       <div className="block lg:hidden absolute top-0 left-0 h-full w-full">
         <Image
           src="/assets/backgrounds/WaveLinesMobile2.svg"
-          alt="Hero Image"
+          alt="Angled lines 5"
           width={0}
           height={0}
           sizes="100vw"

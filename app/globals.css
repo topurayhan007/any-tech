@@ -12,6 +12,9 @@
   .hero-img-clip-top-bottom {
     clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
   }
+  .section-bottom-clip {
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0% 100%);
+  }
 }
 
 h1 {
