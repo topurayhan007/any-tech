@@ -37,7 +37,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex text-2xl items-center justify-between gap-3">
+          <div className="flex lg:hidden text-2xl items-center justify-between gap-3">
             <Link href="#" className="text-blue-main hover:text-white">
               <FaLinkedin />
             </Link>
