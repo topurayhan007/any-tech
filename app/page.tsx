@@ -2,6 +2,7 @@ import AboutUsSection from "@/components/AboutUsSection";
 import HeroSection from "@/components/HeroSection";
 import MobileBannerImage from "@/components/MobileBannerImage";
 import Navbar from "@/components/Navbar";
+import PartnerSection from "@/components/PartnerSection";
 import PhilosophySection from "@/components/PhilosophySection";
 import TabSection from "@/components/TabSection";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutUsSection />
       <PhilosophySection />
       <TabSection />
+      <PartnerSection />
     </>
   );
 }
