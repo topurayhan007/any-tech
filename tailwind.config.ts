@@ -44,6 +44,8 @@ const config: Config = {
           "radial-gradient(59.82% 121.73% at -9.66% 130.31%,#00e9ea 0%,#1f80f0 52.08%,#005bc4 100%)",
         "hero-gradient-overlay":
           "linear-gradient(200deg, #1f80f0 15.05%, rgba(31, 128, 240, 0) 30.39%)",
+        "footer-bg":
+          "radial-gradient(24.45% 88.58% at 23.57% 2%, #00e9ea 0%, #1f80f0 52.08%, #005bc4 100%)",
       },
       boxShadow: {
         "button-primary": "0px 3px 3px rgba(16, 62, 117, 0.37)",

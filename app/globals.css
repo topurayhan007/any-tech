@@ -15,6 +15,9 @@
   .section-bottom-clip {
     clip-path: polygon(0 0, 100% 0, 100% 30%, 0% 100%);
   }
+  .footer-top-clip {
+    clip-path: polygon(0 0, 100% 49%, 100% 100%, 0% 100%);
+  }
 }
 
 h1 {

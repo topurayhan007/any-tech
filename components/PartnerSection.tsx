@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const PartnerSection = () => {
   return (
-    <section className="">
+    <section className="mb-10">
       <div className="container">
         <h6 className="uppercase text-center">TRUSTED BY THE BEST</h6>
         <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-28 mt-8 w-full h-full">
