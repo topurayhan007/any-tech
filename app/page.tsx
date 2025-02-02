@@ -1,5 +1,6 @@
 import AboutUsSection from "@/components/AboutUsSection";
 import ContactUsSection from "@/components/ContactUsSection";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import MobileBannerImage from "@/components/MobileBannerImage";
 import Navbar from "@/components/Navbar";
@@ -20,6 +21,7 @@ export default function Home() {
       <TabSection />
       <PartnerSection />
       <ContactUsSection />
+      <Footer />
     </>
   );
 }

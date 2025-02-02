@@ -4,16 +4,18 @@ import Image from "next/image";
 
 const ContactUsSection = () => {
   return (
-    <section className="relative bg-footer-bg footer-top-clip lg:h-[530px] h-[60vh] bg-cover bg-no-repeat overflow-hidden z-0">
+    <section className="relative bg-footer-bg footer-top-clip-mobile lg:footer-top-clip lg:h-[530px] h-[60vh] bg-cover bg-no-repeat overflow-hidden z-0">
       <div className="container flex flex-col items-start justify-center w-full h-full gap-6 z-10">
         <h2 className="text-white">Legacy no longer</h2>
         <p className="text-white">
           Talk to us to find out how we can transform your organisation for the
           future
         </p>
-        <Button href="#" variant="primary">
-          Contact Us
-        </Button>
+        <div className="w-full lg:w-auto">
+          <Button href="#" variant="primary">
+            Contact Us
+          </Button>
+        </div>
       </div>
 
       <figure className="absolute h-[120%] w-[120%] left-[-10%] top-[-10%] -z-10">

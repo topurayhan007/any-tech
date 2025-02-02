@@ -18,6 +18,9 @@
   .footer-top-clip {
     clip-path: polygon(0 0, 100% 49%, 100% 100%, 0% 100%);
   }
+  .footer-top-clip-mobile {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  }
 }
 
 h1 {
