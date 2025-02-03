@@ -109,7 +109,7 @@ const AboutUsSection = () => {
 
             <figure
               className="absolute inset-0 w-full h-full -z-10"
-              style={{ transform: `translateY(${scrollY * 0.04}px)` }}
+              style={{ transform: `translateY(${scrollY * 0.05}px)` }}
             >
               <Image
                 src="/assets/backgrounds/financingLine1.svg"
@@ -123,7 +123,7 @@ const AboutUsSection = () => {
 
             <figure
               className="absolute -bottom-[15%] md:-bottom-[0%] lg:-bottom-[10%] right-[30%] w-1/2 h-1/2 md:w-[40%] md:h-[40%] lg:w-1/2 lg:h-1/2 z-10"
-              style={{ transform: `translateY(${scrollY * 0.04}px)` }}
+              style={{ transform: `translateY(${scrollY * 0.05}px)` }}
             >
               <Image
                 src="/assets/backgrounds/financingLine2.png"

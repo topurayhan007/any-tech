@@ -47,22 +47,30 @@ const HeroSection = () => {
         <div className="hidden lg:block w-[40%]"></div>
       </div>
 
-      <div className="hidden lg:block absolute top-0 right-0 w-[65%] h-full hero-img-clip">
-        <Image
-          src="/assets/backgrounds/banner.jpg"
-          alt="Hero Image"
-          width={0}
-          height={0}
-          sizes="100vw"
-          className="object-cover h-[110%] w-full"
-        />
+      <div className="hidden lg:block absolute top-0 w-[65%] h-full hero-img-clip xl:left-[35%] xl:w-[65%] left-1/2 lg:w-[56%]">
+        <motion.div
+          initial={{ x: "10%" }}
+          animate={{ x: "0%" }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="h-full w-full"
+        >
+          <Image
+            src="/assets/backgrounds/banner.jpg"
+            alt="Hero Image"
+            width={0}
+            height={0}
+            sizes="100vw"
+            priority
+            className="object-cover h-[115%] w-full"
+          />
+        </motion.div>
         <div className="bg-hero-gradient-overlay absolute top-0 left-0 h-full w-full"></div>
       </div>
 
       {/* Hero SVG with Page-Load Animation + Mouse Follow */}
       <motion.div
         className="hidden lg:block absolute inset-0 h-full w-full z-10"
-        initial={{ x: 100 }}
+        initial={{ x: -100 }}
         animate={{ x: 0 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
         style={{ x: xOffset, y: yOffset }}

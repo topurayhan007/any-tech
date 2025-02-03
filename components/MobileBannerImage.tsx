@@ -10,6 +10,7 @@ const MobileBannerImage = () => {
         width={0}
         height={0}
         sizes="100vw"
+        priority
         className="object-cover h-full w-full"
       />
     </section>
