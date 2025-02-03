@@ -1,7 +1,22 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const AboutUsSection = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section className="">
       <div className="container mt-10">
@@ -36,7 +51,15 @@ const AboutUsSection = () => {
             </figure>
 
             <div className="">
-              <figure className="absolute w-[20%] top-[15%] right-0">
+              <motion.figure
+                className="absolute w-[20%] top-[15%] right-0"
+                animate={{ y: ["0px", "10px", "0px"] }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
                 <Image
                   src="/assets/icons/element-1.svg"
                   alt="Graphics icon 1"
@@ -45,8 +68,16 @@ const AboutUsSection = () => {
                   sizes="100vw"
                   className="object-cover h-full w-full"
                 />
-              </figure>
-              <figure className="absolute w-[13%] top-[24%] left-[6%]">
+              </motion.figure>
+              <motion.figure
+                className="absolute w-[13%] top-[24%] left-[6%]"
+                animate={{ y: ["0px", "10px", "0px"] }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
                 <Image
                   src="/assets/icons/element-2.svg"
                   alt="Graphics icon 2"
@@ -55,8 +86,16 @@ const AboutUsSection = () => {
                   sizes="100vw"
                   className="object-cover h-full w-full"
                 />
-              </figure>
-              <figure className="absolute w-[15%] top-[40%] left-[25%]">
+              </motion.figure>
+              <motion.figure
+                className="absolute w-[15%] top-[40%] left-[25%]"
+                animate={{ y: ["0px", "10px", "0px"] }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
                 <Image
                   src="/assets/icons/element-3.svg"
                   alt="Graphics icon 3"
@@ -65,10 +104,13 @@ const AboutUsSection = () => {
                   sizes="100vw"
                   className="object-cover h-full w-full"
                 />
-              </figure>
+              </motion.figure>
             </div>
 
-            <figure className="absolute inset-0 w-full h-full -z-10">
+            <figure
+              className="absolute inset-0 w-full h-full -z-10"
+              style={{ transform: `translateY(${scrollY * 0.04}px)` }}
+            >
               <Image
                 src="/assets/backgrounds/financingLine1.svg"
                 alt="Line Graphics 1"
@@ -79,7 +121,10 @@ const AboutUsSection = () => {
               />
             </figure>
 
-            <figure className="absolute -bottom-[15%] md:-bottom-[0%] lg:-bottom-[10%] right-[30%] w-1/2 h-1/2 md:w-[40%] md:h-[40%] lg:w-1/2 lg:h-1/2 z-10">
+            <figure
+              className="absolute -bottom-[15%] md:-bottom-[0%] lg:-bottom-[10%] right-[30%] w-1/2 h-1/2 md:w-[40%] md:h-[40%] lg:w-1/2 lg:h-1/2 z-10"
+              style={{ transform: `translateY(${scrollY * 0.04}px)` }}
+            >
               <Image
                 src="/assets/backgrounds/financingLine2.png"
                 alt="Line Graphics 2"

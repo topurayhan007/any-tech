@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Button from "./Button";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const ContactUsSection = () => {
   return (
@@ -18,7 +20,13 @@ const ContactUsSection = () => {
         </div>
       </div>
 
-      <figure className="absolute h-[120%] w-[120%] left-[-10%] top-[-10%] -z-10">
+      <motion.figure
+        initial={{ x: "10%" }}
+        whileInView={{ x: "0%" }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        viewport={{ once: false }}
+        className="absolute h-[120%] w-[120%] left-[-10%] top-[-10%] -z-10"
+      >
         <Image
           src="/assets/backgrounds/footerWaveLines.svg"
           alt="Line Graphics"
@@ -27,7 +35,7 @@ const ContactUsSection = () => {
           sizes="100vw"
           className="object-cover h-full w-full"
         />
-      </figure>
+      </motion.figure>
     </section>
   );
 };

@@ -1,21 +1,25 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import Image from "next/image";
 import Button from "./Button";
 
 const HeroSection = () => {
-  const [motionValues, setMotionValues] = useState({ x: 0, y: 0 });
+  const x = useMotionValue(200);
+  const y = useMotionValue(0);
+
+  const xOffset = useTransform(x, (value) => value);
+  const yOffset = useTransform(y, (value) => value);
 
   const handleMouseMove = (event: MouseEvent) => {
     const { clientX, clientY } = event;
     const { innerWidth, innerHeight } = window;
 
-    // Calculate movement direction
-    const x = (clientX - innerWidth / 2) * 0.02; // Adjust sensitivity
-    const y = (clientY - innerHeight / 2) * 0.02;
+    const moveX = (clientX - innerWidth / 2) * 0.02;
+    const moveY = (clientY - innerHeight / 2) * 0.02;
 
-    setMotionValues({ x, y });
+    x.set(0 + moveX);
+    y.set(moveY);
   };
 
   useEffect(() => {
@@ -24,7 +28,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="bg-hero-bg lg:hero-bg-clip relative w-full h-[70vh] md:h-[70vh] lg:h-[94vh] overflow-hidden">
+    <section className="bg-hero-bg lg:hero-bg-clip relative w-full h-[70vh] md:h-[70vh] lg:h-[94vh] overflow-hidden z-0">
       <div className="container h-full relative z-20 flex items-center justify-center">
         <div className="w-full lg:w-[60%]">
           <div className="flex flex-col items-start justify-center h-full">
@@ -55,13 +59,13 @@ const HeroSection = () => {
         <div className="bg-hero-gradient-overlay absolute top-0 left-0 h-full w-full"></div>
       </div>
 
-      {/* Animated SVG */}
+      {/* Hero SVG with Page-Load Animation + Mouse Follow */}
       <motion.div
-        className="hidden lg:block absolute inset-0 h-full w-full z-0"
-        style={{
-          transform: `translateX(${motionValues.x}px) translateY(${motionValues.y}px)`,
-        }}
-        transition={{ type: "spring", stiffness: 80, damping: 10 }}
+        className="hidden lg:block absolute inset-0 h-full w-full z-10"
+        initial={{ x: 100 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        style={{ x: xOffset, y: yOffset }}
       >
         <Image
           src="/assets/backgrounds/heroDesktopWaveLines.svg"
