@@ -55,6 +55,7 @@ const PhilosophySection = () => {
             iconHref={item.iconHref}
             heading={item.heading}
             info={item.info}
+            delay={800 + 500 * index}
           />
         ))}
       </div>

@@ -16,7 +16,8 @@ const PartnerSection = () => {
             <CountUp
               start={0}
               end={20}
-              duration={2}
+              duration={1}
+              enableScrollSpy
               separator=""
               prefix=">"
               className="text-5xl md:text-7xl lg:text-8xl font-semibold font-monserrat bg-gradient-to-b from-blue-main to-[#0057BB] text-transparent bg-clip-text"
@@ -29,7 +30,8 @@ const PartnerSection = () => {
             <CountUp
               start={0}
               end={40}
-              duration={2}
+              duration={1}
+              enableScrollSpy
               separator=""
               suffix="+"
               className="text-5xl md:text-7xl lg:text-8xl font-semibold font-monserrat bg-gradient-to-b from-blue-main to-[#0057BB] text-transparent bg-clip-text"
@@ -42,7 +44,8 @@ const PartnerSection = () => {
             <CountUp
               start={0}
               end={200}
-              duration={2}
+              duration={1}
+              enableScrollSpy
               separator=""
               prefix=">"
               suffix="m"
@@ -90,7 +93,7 @@ const PartnerSection = () => {
                   alt={`${item.name} Image`}
                   width={100}
                   height={100}
-                  className="object-contain"
+                  className="object-contain h-full w-full"
                 />
               </figure>
             </SwiperSlide>

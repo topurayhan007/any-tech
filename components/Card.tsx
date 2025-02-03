@@ -5,11 +5,16 @@ interface CardProps {
   iconHref: string;
   heading: string;
   info: string;
+  delay?: number;
 }
 
-const Card: React.FC<CardProps> = ({ iconHref, heading, info }) => {
+const Card: React.FC<CardProps> = ({ iconHref, heading, info, delay }) => {
   return (
-    <div className="bg-blue-light lg:p-8 md:p-6 p-7 rounded-2xl flex flex-col gap-5">
+    <div
+      data-aos="fade-up"
+      data-aos-duration={delay}
+      className="bg-blue-light lg:p-8 md:p-6 p-7 rounded-2xl flex flex-col gap-5"
+    >
       <Image
         src={iconHref}
         alt="Icon"

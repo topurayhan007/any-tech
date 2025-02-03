@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
+import { AOSInit } from "@/utilities/aos";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -27,6 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.className} ${inter.variable}`}>
+      <AOSInit />
       <body className={`${montserrat.variable} antialiased`}>{children}</body>
     </html>
   );
