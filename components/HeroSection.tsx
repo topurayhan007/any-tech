@@ -28,7 +28,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="bg-hero-bg lg:hero-bg-clip relative w-full h-[70vh] md:h-[70vh] lg:h-[94vh] overflow-hidden z-0">
+    <section className="bg-hero-bg lg:hero-bg-clip relative w-full h-[88vh] md:h-[70vh] lg:h-[94vh] overflow-hidden z-0">
       <div className="container h-full relative z-20 flex items-center justify-center">
         <div className="w-full lg:w-[60%]">
           <div className="flex flex-col items-start justify-center h-full">
